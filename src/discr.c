@@ -106,7 +106,7 @@ void EvalOrderedAtt(Attribute Att, CaseCount Cases)
     DiscrValue	v, BestV;
     double	BaseInfo, ThisGain, BestInfo, BestGain=None;
     double unknown=0.0;
-    double alpha=1.75;
+    double alpha=1.55;
     SetDiscrFreq(Att);
     KnownCases = Cases - GEnv.ValFreq[0];
 
