@@ -29,6 +29,7 @@
 /*	Evaluation of a test on a discrete valued attribute		 */
 /*      ---------------------------------------------------		 */
 /*									 */
+
 /*************************************************************************/
 
 #include "defns.h"
@@ -52,7 +53,7 @@ void EvalDiscreteAtt(Attribute Att, CaseCount Cases)
     DiscrValue	v;
     double	BaseInfo;
     double unknown=0.0;
-    double alpha=1.25;
+    double alpha=1.65;
     SetDiscrFreq(Att);
     KnownCases = Cases - GEnv.ValFreq[0];
 
@@ -105,7 +106,7 @@ void EvalOrderedAtt(Attribute Att, CaseCount Cases)
     DiscrValue	v, BestV;
     double	BaseInfo, ThisGain, BestInfo, BestGain=None;
     double unknown=0.0;
-    double alpha=1.50;
+    double alpha=1.65;
     SetDiscrFreq(Att);
     KnownCases = Cases - GEnv.ValFreq[0];
 
